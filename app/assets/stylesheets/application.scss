@@ -1,0 +1,15 @@
+@import 'header';
+@import 'variables';
+@import 'tabs';
+@import 'card';
+@import 'buttons';
+@import 'flash';
+@import 'common';
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  background: #FFFFFF;
+}
