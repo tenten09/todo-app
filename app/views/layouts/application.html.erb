@@ -14,6 +14,13 @@
     <header class="header">
     <p class="header_title">Boards</p>
     <p class="header_line"></p>
+    <div class="dropdown">
+        <%= image_tag 'Oval.png', class: 'header_avatar dropbtn' %>
+        <div class="dropdown-content">
+          <a href="#">プロフィール</a>
+          <a href="#">ログアウト</a>
+        </div>
+      </div>
     </header>
     <%= yield %>
   </body>

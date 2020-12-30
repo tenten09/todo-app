@@ -1,6 +1,12 @@
+@import 'variables';
+
+$avatar-size: 40px;
+$header-padding-y: 16px;
+
 .header {
   background: #F2F2F2;
-
+  display: flex;
+  
   &_title {
     position: absolute;
     width: 56px;
@@ -18,10 +24,8 @@
     color: #000000;
   }
 
-  &_line{
+  &_line {
     color: #000000;
-    
-    border: red;
     position: absolute;
     width: 1920px;
     height: 1px;
@@ -32,5 +36,52 @@
     mix-blend-mode: normal;
     opacity: 0.1;
       
+}
+&_avatar {
+  width: $avatar-size;
+  height: $avatar-size;
+  border-radius: 100%;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 352px;
+  top: 10px;
+
+  background: url(Image.png);
+  }
+
+.dropbtn {
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  font-weight: normal;
+  display: none;
+  right: 0;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+  color: $text-base-color;
+}
+
+.dropdown-content a:hover {
+  background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 }
