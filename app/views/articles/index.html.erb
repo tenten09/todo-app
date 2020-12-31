@@ -1,35 +1,28 @@
 <div class="container">
   <div class="tabs">
     <div class="tabs_item active">
-      新着記事一覧
-    </div>
-    <div class="tabs_item">
-      タイムライン
+      Brackets
     </div>
   </div>
 
 
 <% @articles.each do |article| %>
-<div class="card_title">
-  <%= article.title %>
-</div>
-<% end %>
-
- <div class="card">
-    <div class="card_image">
-      <%= image_tag 'Oval.png' %>
-    </div>
-    <div class="card_content">
-      <div class="card_heart">
-        <%= image_tag 'Oval.png' %>
-        <span>23</span>
+  <%= link_to article_path(article) do %>
+    <div class="card">
+      <div class="card_image">
+        <%= image_tag 'eyecatch1.png' %>
       </div>
-      <div class="card_detail">
-        <%= image_tag 'Oval.png' %>
-        <div>
-          <p>cohki0305</p>
-          <p>2020/4/16</p>
+      <div class="card_content">
+       <div class="card_title">
+            <%= article.title %>
+          </div>
+        <div class="card_heart">
+          <%= image_tag 'heart.svg' %>
+        </div>
+        <div class="card_detail">
+          <%= image_tag 'Oval.png' %>
         </div>
       </div>
-    </div>
-  </div>
+    <% end%>
+  <% end %>
+</div>

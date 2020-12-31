@@ -1,0 +1,29 @@
+.article {
+  .article_title {
+    // position: absolute;
+    height: 36px;
+    left: 0%;
+    right: 0%;
+    top: calc(50% - 36px/2);
+
+    margin-bottom: 50px;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 36px;
+    /* identical to box height */
+    color: #000000;  
+  }
+  
+  .article_content {
+    // position: absolute;
+    // width: 362px;
+    // height: 217px;
+    // left: 26px;
+    // top: 364px;
+
+    background: #F4F4F4;
+    border-radius: 10px;
+  }
+}
