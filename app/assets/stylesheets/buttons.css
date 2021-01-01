@@ -1,34 +1,17 @@
 .btn-primary {
   margin-left: 30px;
-  // position: absolute;
   width: 362px;
   height: 40px;
   left: 30px;
   top: 889px;
-
   background: #F8BD1C;
   border-radius: 4px;
-  // transform: matrix(1, 0, 0, -1, 0, 0);
-
-  
-
-
-  // position: absolute;
-  // width: 60px;
-  // height: 25px;
-  // left: 179px;
-  // top: 857px;
-
   font-family: Avenir;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 25px;
   /* identical to box height */
-
-
   color: #FFFFFF;
-
   border: none;
-  
 }

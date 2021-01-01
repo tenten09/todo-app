@@ -3,6 +3,8 @@
 @import 'variables';
 @import 'card';
 @import 'todo';
+@import 'buttons';
+@import 'form';
 
 html {
   // word-spacing: 1px;
@@ -29,6 +31,25 @@ body {
 a{
   text-decoration: none;
   color: $text-base-color;
+}
+
+.add_card {
+  margin-top: 24px;
+  // position: absolute;
+  width: 362px;
+  height: 160px;
+  left: 30px;
+  top: 917px;
+
+  background: #FFFFFF;
+  border: 1px dashed rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+
+  p {
+    padding: 50px;
+    text-align: center;
+    
+  }
 }
 
 // html {

@@ -1,0 +1,17 @@
+<div class="container">
+  <%= form_with(model: @article, url: articles_path, method: 'post', local: true) do |f| %>
+    <div>
+      <%= f.label :Name, 'Name' %>
+    </div>
+    <div>
+      <%= f.text_field :Name, class: 'text' %> 
+    </div>
+    <div>
+      <%= f.label :Description, 'Description' %>
+    </div>
+    <div>
+      <%= f.text_area :Description, class: 'content' %>
+    </div>
+    <%= f.submit 'Submit', class: 'btn-primary' %>
+  <% end %>
+</div>
