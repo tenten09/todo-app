@@ -1,3 +1,5 @@
+@import './variables';
+
 .article {
   .article_title {
     // position: absolute;
@@ -18,8 +20,8 @@
 
     img {
       cursor: pointer;
-      width: $avatar-size;
-      height: $avatar-size;
+      // width: $avatar-size;
+      // height: $avatar-size;
       border-radius: 100%;
       margin-right: 16px;
     }
