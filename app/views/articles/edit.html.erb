@@ -1,1 +1,22 @@
-<p>edit</p>
+<div class="container">
+  <ul>
+    <% @article.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+  <%= form_with(model: @article, url: article_path(@article), method: 'put', local: true) do |f| %>
+    <div>
+      <%= f.label :title, 'Name' %>
+    </div>
+    <div>
+      <%= f.text_field :title, class: 'title' %> 
+    </div>
+    <div>
+      <%= f.label :content, 'Description' %>
+    </div>
+    <div>
+      <%= f.text_area :content, class: 'content' %>
+    </div>
+    <%= f.submit 'Submit', class: 'btn-primary' %>
+  <% end %>
+</div>
