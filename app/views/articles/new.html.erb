@@ -1,16 +1,21 @@
 <div class="container">
+  <ul>
+    <% @article.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
   <%= form_with(model: @article, url: articles_path, method: 'post', local: true) do |f| %>
     <div>
-      <%= f.label :Name, 'Name' %>
+      <%= f.label :title, 'Name' %>
     </div>
     <div>
-      <%= f.text_field :Name, class: 'text' %> 
+      <%= f.text_field :title, class: 'title' %> 
     </div>
     <div>
-      <%= f.label :Description, 'Description' %>
+      <%= f.label :content, 'Description' %>
     </div>
     <div>
-      <%= f.text_area :Description, class: 'content' %>
+      <%= f.text_area :content, class: 'content' %>
     </div>
     <%= f.submit 'Submit', class: 'btn-primary' %>
   <% end %>
