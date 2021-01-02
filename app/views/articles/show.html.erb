@@ -4,6 +4,7 @@
         <%= image_tag 'actions.svg', class: 'dropbtn' %>
         <div class="dropdown-content mini">
           <%= link_to 'edit', edit_article_path(@article) %>
+          <%= link_to 'delete', article_path(@article), data: { method: 'delete', confirm: '本当に削除してもよろしいですか' } %>
         </div>
       </div>
     </div>
