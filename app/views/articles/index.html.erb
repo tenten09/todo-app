@@ -1,30 +1,10 @@
 <div class="container">
-  <div class="tabs">
-    <div class="tabs_item active">
-      Brackets
-    </div>
-  </div>
+  <%= render 'tabs' %>
 
 
 <% @articles.each do |article| %>
-  <%= link_to article_path(article) do %>
-    <div class="card">
-      <div class="card_image">
-        <%= image_tag 'eyecatch1.png' %>
-      </div>
-      <div class="card_content">
-       <div class="card_title">
-            <%= article.title %>
-          </div>
-        <div class="card_heart">
-          <%= image_tag 'heart.svg' %>
-        </div>
-        <div class="card_detail">
-          <%= image_tag 'Oval.png' %>
-        </div>
-      </div>
-    <% end%>
-  <% end %>
+  <%= render 'article', article: article %>
+<% end %>
   <%= link_to new_article_path do %>
     <div class="add_card">
       <p>+ Add new card</p>

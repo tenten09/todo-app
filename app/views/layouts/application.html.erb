@@ -12,8 +12,15 @@
 
   <body>
     <header class="header">
-    <p class="header_title">Boards</p>
-    <p class="header_line"></p>
+    <div class="header_logos">
+      <% if !current_page?(root_path) %>
+        <%= link_to :back do %>
+          <%= image_tag 'back.svg', class: 'header_back' %>
+        <% end %>
+      <% end %>
+      <p class="header_title">Boards</p>
+    </div>
+      <p class="header_line"></p>
     <div class="dropdown">
         <%= image_tag 'Oval.png', class: 'header_avatar dropbtn' %>
         <div class="dropdown-content">
