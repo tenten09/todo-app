@@ -1,0 +1,5 @@
+.container
+  %ul
+    - @article.errors.full_messages.each do |message|
+      %li= message
+  = render 'form', article: @article
