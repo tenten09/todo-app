@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+}
+
+.header_logos {
+  min-width: 0;
+  display: flex;
+}
+
+.header_logos img {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  margin: 12px 8px 0;
+  background-color: black;
+}
+
+.header_title {
+  width: 56px;
+  height: 25px;
+  left: 30px;
+  top: 17px;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+  color: #000000;
+}
+
+.header_line {
+  position: absolute;
+  width: 1920px;
+  height: 1px;
+  left: 0px;
+  top: 58px;
+  background: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.1;
+}
+
+.header_avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 352px;
+  top: 10px;
+  background: url(Image.png);
+}
