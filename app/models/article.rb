@@ -14,6 +14,7 @@ class Article < ApplicationRecord
 
   validates :content, presence: true
   validates :content, length: { minimum: 10 }
+  validates :content, uniqueness: true
   # validates :deadeline, presence: true
 
   def display_created_at
