@@ -1,10 +1,11 @@
 .article
-  .article_detail_actions
-    .dropdown
-      = image_tag 'actions.svg', class: 'dropbtn'
-      .dropdown-content.mini
-        = link_to 'edit', edit_article_path(@article)
-        = link_to 'delete', article_path(@article), data: { method: 'delete', confirm: '本当に削除してもよろしいですか' }
+  - if user_signed_in?
+    .article_detail_actions
+      .dropdown
+        = image_tag 'actions.svg', class: 'dropbtn'
+        .dropdown-content.mini
+          = link_to 'edit', edit_article_path(@article)
+          = link_to 'delete', article_path(@article), data: { method: 'delete', confirm: '本当に削除してもよろしいですか' }
   %h1.article_title= @article.title
   .article_content
     = @article.content
