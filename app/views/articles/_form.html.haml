@@ -13,4 +13,20 @@
       = f.label :content, 'Description'
     %div
       = f.text_area :content, class: 'content'
+    %div  
+      = f.label :deadline, 'deadline'
+    %div    
+
+      = f.text_field :deadline, class: 'form-control result', id: 'date-time'
+
+      -# = f.text_field :deadline, class: 'form-control'
+    -# %input#date-time.result{:placeholder => "Date Picker...", :type => "text"}/
+    -# :javascript
+    -#   $(function () {
+    -#     $('#date-time').bootstrapMaterialDatePicker({
+    -#       format: 'YYYY-MM-DD HH:mm'
+    -#         });
+    -#     });
+
+
     = f.submit 'Submit', class: 'btn-primary'
