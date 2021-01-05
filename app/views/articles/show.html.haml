@@ -1,5 +1,5 @@
 .article
-  - if user_signed_in?
+  - if user_signed_in? && current_user.has_written(@article)
     .article_detail_actions
       .dropdown
         = image_tag 'actions.svg', class: 'dropbtn'
@@ -12,4 +12,5 @@
     .article_detail
       = image_tag 'Oval.png'
       %div
+        %p= @article.author_name
         %p= @article.display_created_at

@@ -13,11 +13,13 @@
 ActiveRecord::Schema.define(version: 2021_01_05_011043) do
 
   create_table "articles", force: :cascade do |t|
-    t.string "title"
-    t.text "content"
+    t.integer "user_id", null: false
+    t.string "title", null: false
+    t.text "content", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.datetime "deadline"
+    t.index ["user_id"], name: "index_articles_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
