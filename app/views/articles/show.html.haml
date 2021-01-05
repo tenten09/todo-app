@@ -12,4 +12,7 @@
     .article_detail
       = image_tag 'Oval.png'
       %div
+      - if @article.user.present?
+        %p= @article.user.display_name
+      %div
         %p= @article.display_created_at
