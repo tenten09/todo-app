@@ -6,5 +6,7 @@ class ProfilesController < ApplicationController
   end
 
   def edit
+    current_user.articles.build
+    @profile = current_user.build_profile
   end
 end
