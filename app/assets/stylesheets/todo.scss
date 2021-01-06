@@ -41,4 +41,39 @@
       background: #F4F4F4;
       border-radius: 10px;
     }
+
+    h2 {
+      // position: absolute;
+      height: 36px;
+      left: 0%;
+      right: 0%;
+      top: calc(50% - 36px/2);
+
+      font-family: Avenir;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 26px;
+      line-height: 36px;
+      /* identical to box height */
+
+
+      color: #000000;
+    }
+
+    &_comment {
+      // position: absolute;
+      width: 298px;
+      height: 57px;
+      left: 86px;
+      top: 677px;
+
+      font-family: Avenir;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 19px;
+
+      color: #000000;
+
+    }
 }
