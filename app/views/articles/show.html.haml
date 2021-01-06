@@ -15,6 +15,12 @@
         %p= @article.author_name
         %p= @article.display_created_at
 
+.article
+  %h2 Comment
+  - @comments.each do |comment|
+    .article_comment
+      -# = image_tag 'Oval.png'
+      %p= comment.content
   
 .container
   = link_to new_article_comment_path(@article) do
