@@ -7,7 +7,7 @@
 #  gender       :integer
 #  introduction :text
 #  nickname     :string
-#  suscribed    :boolean          default(FALSE)
+#  subscribed   :boolean          default(FALSE)
 #  created_at   :datetime         not null
 #  updated_at   :datetime         not null
 #  user_id      :integer          not null

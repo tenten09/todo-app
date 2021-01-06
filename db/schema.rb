@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 2021_01_06_041150) do
     t.text "introduction"
     t.integer "gender"
     t.date "birthday"
-    t.boolean "suscribed", default: false
+    t.boolean "subscribed", default: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_profiles_on_user_id"
