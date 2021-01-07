@@ -1,4 +1,7 @@
 .article
+  - if @article.eyecatch.attached?
+    .article_image
+      = image_tag @article.eyecatch
   - if user_signed_in? && current_user.has_written(@article)
     .article_detail_actions
       .dropdown
