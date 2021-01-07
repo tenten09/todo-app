@@ -1,5 +1,9 @@
 @import './variables';
 
+  $avatar-size: 40px;
+  $header-padding-y: 16px;
+  $back-icon-size: 16px;
+
 .article {
   .article_title {
     // position: absolute;
@@ -25,7 +29,22 @@
       border-radius: 100%;
       margin-right: 16px;
     }
+    
+    &_detail {
 
+      img{
+
+        // width: $avatar-size;
+        // height: $avatar-size;
+        border-radius: 100%;
+        // position: absolute;
+        width: 40px;
+        height: 40px;
+        right: 40px;
+        top: 10px;
+      }
+    }
+    
     &_detail_actions {
       right: 0px;
       position: absolute;

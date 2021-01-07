@@ -75,3 +75,14 @@
     border-radius: 10px;
   }
 }
+
+.avatar {
+  width: $avatar-size;
+  height: $avatar-size;
+  border-radius: 100%;
+  // position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 40px;
+  top: 10px;
+}

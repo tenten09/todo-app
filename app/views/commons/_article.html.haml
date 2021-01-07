@@ -8,7 +8,7 @@
       .card_heart
         = image_tag 'heart.svg'
       .card_detail
-        = image_tag 'Oval.png'
+        = image_tag article.user.avatar_image, class: 'avatar'
         %div
           %p= article.author_name
           %p= article.display_created_at
