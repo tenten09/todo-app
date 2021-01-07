@@ -10,7 +10,7 @@
   .article_content
     = @article.content
     .article_detail
-      = image_tag 'Oval.png'
+      = image_tag @article.user.avatar_image
       %div
         %p= @article.author_name
         %p= @article.display_created_at
