@@ -6,12 +6,12 @@ class ProfilesController < ApplicationController
   end
 
   def edit
-    current_user.articles.build
-    @profile = current_user.build_profile
+    @profile = current_user.prepare_profile
   end
 
   def update
-    @profile = current_user.build_profile(profile_params)
+    @profile = current_user.prepare_profile
+    @profile.assign_attributes(profile_params)
     if @profile.save
       redirect_to profile_path, notice: 'プロフィール更新しました'
     else
